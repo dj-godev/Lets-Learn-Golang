@@ -15,7 +15,7 @@ func initializeRouter() {
 	r.HandleFunc("/users/{id}",UpdateUser).Methods("PUT")
 	r.HandleFunc("/users/{id}",DeleteUser).Methods("DELETE")
 
-	log.Fatal(http.ListenAndServe(":8081",r))
+	log.Fatal(http.ListenAndServe(":8082",r))
 }
 
 func main() {
